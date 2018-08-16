@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<root
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../main/resources/cosy.xsd">
+
+    <!--
+    author: Sven Schneider
+    copyright: all rights reserved, 2018
+    -->
+
+    <string_symbol id="event_0" string="e0"/>
+    <string_symbol id="event_1" string="e1"/>
+    <string_symbol id="event_2" string="e2"/>
+
+    <two_elements__teB id="e0" value="event_0"/>
+    <two_elements__teB id="e1" value="event_1"/>
+    <two_elements__teB id="e2" value="event_2"/>
+
+    <string_symbol id="nonterminal_N0" string="N0"/>
+    <string_symbol id="nonterminal_N1" string="N1"/>
+    <string_symbol id="nonterminal_N2" string="N2"/>
+    <string_symbol id="nonterminal_N3" string="N3"/>
+    <string_symbol id="nonterminal_N4" string="N4"/>
+    <string_symbol id="nonterminal_N5" string="N5"/>
+    <string_symbol id="nonterminal_N6" string="N6"/>
+
+    <two_elements__teA id="N0" value="nonterminal_N0"/>
+    <two_elements__teA id="N1" value="nonterminal_N1"/>
+    <two_elements__teA id="N2" value="nonterminal_N2"/>
+    <two_elements__teA id="N3" value="nonterminal_N3"/>
+    <two_elements__teA id="N4" value="nonterminal_N4"/>
+    <two_elements__teA id="N5" value="nonterminal_N5"/>
+    <two_elements__teA id="N6" value="nonterminal_N6"/>
+
+    <cfg_step_label id="prod_00" prod_lhs="nonterminal_N3" prod_rhs="e0 N4 e0"/>
+    <cfg_step_label id="prod_01" prod_lhs="nonterminal_N4" prod_rhs="e1 N5"/>
+    <cfg_step_label id="prod_02" prod_lhs="nonterminal_N5" prod_rhs="N0 N6"/>
+    <cfg_step_label id="prod_03" prod_lhs="nonterminal_N0" prod_rhs="N1 N1"/>
+    <cfg_step_label id="prod_04" prod_lhs="nonterminal_N6" prod_rhs="e2 N1"/>
+    <cfg_step_label id="prod_05" prod_lhs="nonterminal_N1"/>
+
+    <cfg
+            id="input"
+            cfg_nonterminals="nonterminal_N0 nonterminal_N1 nonterminal_N2 nonterminal_N3 nonterminal_N4 nonterminal_N5 nonterminal_N6"
+            cfg_events="event_0 event_1 event_2"
+            cfg_initial="nonterminal_N3"
+            cfg_step_labels="prod_00 prod_01 prod_02 prod_03 prod_04 prod_05"/>
+
+</root>
+

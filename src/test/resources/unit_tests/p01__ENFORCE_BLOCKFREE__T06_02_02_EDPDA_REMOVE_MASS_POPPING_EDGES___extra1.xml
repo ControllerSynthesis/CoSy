@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<root
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../main/resources/cosy.xsd">
+
+    <!--
+    author: Sven Schneider
+    copyright: all rights reserved, 2018
+    -->
+
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-1" value="0"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-2" value="1"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-3" value="2"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-4" value="3"/>
+    <string_symbol id="string_symbol-1" string="r"/>
+    <string_symbol id="string_symbol-2" string="F"/>
+    <string_symbol id="string_symbol-3" string="S"/>
+    <string_symbol id="string_symbol-4" string="B1"/>
+    <string_symbol id="string_symbol-5" string="B2"/>
+    <string_symbol id="string_symbol-6" string="A"/>
+    <epda_step_label id="epda_step_label-1" edge_src="symbol__cons_symbol_nat-1" edge_event="string_symbol-6"
+                     edge_pop="symbol__cons_symbol_nat-3"
+                     edge_push="symbol__cons_symbol_nat-1 symbol__cons_symbol_nat-3"
+                     edge_trg="symbol__cons_symbol_nat-3"/>
+    <epda_step_label id="epda_step_label-2" edge_src="symbol__cons_symbol_nat-4" edge_event="string_symbol-4"
+                     edge_pop="symbol__cons_symbol_nat-2"
+                     edge_push="symbol__cons_symbol_nat-4 symbol__cons_symbol_nat-2"
+                     edge_trg="symbol__cons_symbol_nat-2"/>
+    <epda_step_label id="epda_step_label-3" edge_src="symbol__cons_symbol_nat-3" edge_pop="symbol__cons_symbol_nat-1"
+                     edge_push="symbol__cons_symbol_nat-2 symbol__cons_symbol_nat-1"
+                     edge_trg="symbol__cons_symbol_nat-4"/>
+    <epda id="input"
+          epda_states="symbol__cons_symbol_nat-1 symbol__cons_symbol_nat-2 symbol__cons_symbol_nat-3 symbol__cons_symbol_nat-4"
+          epda_events="string_symbol-1 string_symbol-2 string_symbol-3 string_symbol-4 string_symbol-5 string_symbol-6 symbol__cons_symbol_nat-1"
+          epda_gamma="symbol__cons_symbol_nat-1 symbol__cons_symbol_nat-2 symbol__cons_symbol_nat-3 symbol__cons_symbol_nat-4"
+          epda_delta="epda_step_label-1 epda_step_label-2 epda_step_label-3" epda_initial="symbol__cons_symbol_nat-1"
+          epda_eos="symbol__cons_symbol_nat-3"/>
+</root>

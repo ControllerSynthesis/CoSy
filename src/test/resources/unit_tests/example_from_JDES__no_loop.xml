@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<root
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../main/resources/cosy.xsd">
+
+    <!--
+    author: Sven Schneider
+    copyright: all rights reserved, 2018
+    -->
+
+    <string_symbol id="event_r" string="r"/>
+    <string_symbol id="event_F" string="F"/>
+    <string_symbol id="event_B1" string="B1"/>
+    <string_symbol id="event_B2" string="B2"/>
+    <string_symbol id="event_A" string="A"/>
+    <string_symbol id="box" string="☐"/>
+    <string_symbol id="bullet" string="•"/>
+    <string_symbol id="circ" string="○"/>
+
+    <!-- plant1 -->
+    <string_symbol id="state_pA" string="pA"/>
+    <string_symbol id="state_pB" string="pB"/>
+    <epda_step_label id="edge_plant1_0" edge_src="state_pA" edge_event="event_A" edge_pop="box" edge_push="box"
+                     edge_trg="state_pA"/>
+    <epda_step_label id="edge_plant1_1" edge_src="state_pA" edge_event="event_r" edge_pop="box" edge_push="box"
+                     edge_trg="state_pA"/>
+    <epda_step_label id="edge_plant1_2" edge_src="state_pA" edge_event="event_F" edge_pop="box" edge_push="box"
+                     edge_trg="state_pA"/>
+    <epda_step_label id="edge_plant1_4" edge_src="state_pB" edge_event="event_r" edge_pop="box" edge_push="box"
+                     edge_trg="state_pB"/>
+    <epda_step_label id="edge_plant1_5" edge_src="state_pB" edge_event="event_F" edge_pop="box" edge_push="box"
+                     edge_trg="state_pB"/>
+    <epda_step_label id="edge_plant1_6" edge_src="state_pA" edge_event="event_B1" edge_pop="box" edge_push="box"
+                     edge_trg="state_pB"/>
+    <epda_step_label id="edge_plant1_7" edge_src="state_pB" edge_event="event_B2" edge_pop="box" edge_push="box"
+                     edge_trg="state_pA"/>
+    <epda
+            id="plant1"
+            epda_states="state_pA state_pB"
+            epda_events="event_r event_F event_B1 event_B2 event_A"
+            epda_gamma="box"
+            epda_delta="edge_plant1_0 edge_plant1_1 edge_plant1_2 edge_plant1_4 edge_plant1_5 edge_plant1_6 edge_plant1_7"
+            epda_initial="state_pA"
+            epda_eos="box"
+            epda_marking="state_pA"/>
+
+    <!-- plant2 -->
+    <string_symbol id="state_pI" string="pI"/>
+    <string_symbol id="state_pr" string="pr"/>
+    <string_symbol id="state_pF" string="pF"/>
+    <epda_step_label id="edge_plant2_0" edge_src="state_pI" edge_event="event_A" edge_pop="box" edge_push="box"
+                     edge_trg="state_pI"/>
+    <epda_step_label id="edge_plant2_1" edge_src="state_pI" edge_event="event_B1" edge_pop="box" edge_push="box"
+                     edge_trg="state_pI"/>
+    <epda_step_label id="edge_plant2_2" edge_src="state_pI" edge_event="event_B2" edge_pop="box" edge_push="box"
+                     edge_trg="state_pI"/>
+    <epda_step_label id="edge_plant2_3" edge_src="state_pI" edge_event="event_r" edge_pop="box" edge_push="box"
+                     edge_trg="state_pr"/>
+    <epda_step_label id="edge_plant2_4" edge_src="state_pr" edge_event="event_A" edge_pop="box" edge_push="box"
+                     edge_trg="state_pr"/>
+    <epda_step_label id="edge_plant2_5" edge_src="state_pr" edge_event="event_B1" edge_pop="box" edge_push="box"
+                     edge_trg="state_pr"/>
+    <epda_step_label id="edge_plant2_6" edge_src="state_pr" edge_event="event_B2" edge_pop="box" edge_push="box"
+                     edge_trg="state_pr"/>
+    <epda_step_label id="edge_plant2_7" edge_src="state_pr" edge_event="event_F" edge_pop="box" edge_push="box"
+                     edge_trg="state_pF"/>
+    <epda
+            id="plant2"
+            epda_states="state_pI state_pr state_pF"
+            epda_events="event_r event_F event_B1 event_B2 event_A"
+            epda_gamma="box"
+            epda_delta="edge_plant2_0 edge_plant2_1 edge_plant2_2 edge_plant2_3 edge_plant2_4 edge_plant2_5 edge_plant2_6 edge_plant2_7"
+            epda_initial="state_pI"
+            epda_eos="box"
+            epda_marking="state_pF"/>
+
+    <!-- spec -->
+    <string_symbol id="state_q1" string="q1"/>
+    <string_symbol id="state_q2" string="q2"/>
+    <string_symbol id="state_q3" string="q3"/>
+    <string_symbol id="state_q4" string="q4"/>
+    <epda_step_label id="edge_spec_0" edge_src="state_q1" edge_event="event_A" edge_pop="box" edge_push="bullet box"
+                     edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_1" edge_src="state_q1" edge_event="event_A" edge_pop="bullet"
+                     edge_push="bullet bullet" edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_2" edge_src="state_q1" edge_event="event_A" edge_pop="circ" edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_3" edge_src="state_q1" edge_event="event_B1" edge_pop="box" edge_push="circ box"
+                     edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_4" edge_src="state_q1" edge_event="event_B1" edge_pop="bullet" edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_5" edge_src="state_q1" edge_event="event_B1" edge_pop="circ" edge_push="circ circ"
+                     edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_6" edge_src="state_q1" edge_event="event_B2" edge_pop="box" edge_push="circ box"
+                     edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_7" edge_src="state_q1" edge_event="event_B2" edge_pop="bullet" edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_8" edge_src="state_q1" edge_event="event_B2" edge_pop="circ" edge_push="circ circ"
+                     edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_9" edge_src="state_q1" edge_event="event_r" edge_trg="state_q2"/>
+    <epda_step_label id="edge_spec_10" edge_src="state_q2" edge_event="event_A" edge_pop="circ" edge_trg="state_q2"/>
+    <epda_step_label id="edge_spec_11" edge_src="state_q2" edge_event="event_B1" edge_pop="bullet" edge_trg="state_q2"/>
+    <epda_step_label id="edge_spec_12" edge_src="state_q2" edge_event="event_B2" edge_pop="bullet" edge_trg="state_q2"/>
+    <epda_step_label id="edge_spec_13" edge_src="state_q2" edge_event="event_B2" edge_pop="circ" edge_push="circ circ"
+                     edge_trg="state_q2"/>
+    <epda_step_label id="edge_spec_14" edge_src="state_q2" edge_event="event_F" edge_trg="state_q3"/>
+    <epda_step_label id="edge_spec_15" edge_src="state_q3" edge_trg="state_q4"/>
+    <epda_step_label id="edge_spec_16" edge_src="state_q4" edge_pop="bullet" edge_trg="state_q4"/>
+    <epda_step_label id="edge_spec_17" edge_src="state_q4" edge_pop="circ" edge_trg="state_q4"/>
+    <epda
+            id="spec"
+            epda_states="state_q1 state_q2 state_q3 state_q4"
+            epda_events="event_r event_F event_B1 event_B2 event_A"
+            epda_gamma="box bullet circ"
+            epda_delta="edge_spec_0 edge_spec_1 edge_spec_2 edge_spec_3 edge_spec_4 edge_spec_5 edge_spec_6 edge_spec_7 edge_spec_8 edge_spec_9 edge_spec_10 edge_spec_11 edge_spec_12 edge_spec_13 edge_spec_14 edge_spec_15 edge_spec_16 edge_spec_17"
+            epda_initial="state_q1"
+            epda_eos="box"
+            epda_marking="state_q3"/>
+
+    <!-- sigmaUC -->
+    <sigma_uncontrollable id="sigmaUC" elements="event_B2 event_r event_F"/>
+
+    <!-- test_sequences -->
+    <test_sequences id="test_sequences_for_resulting_controller">
+        <test_sequence id="seq1_B2_is_uncontrollable_at_the_end" expected="REJECT" sequence="event_A event_B1 event_r"/>
+        <test_sequence id="seq2_success_everything_balanced" expected="MARK"
+                       sequence="event_A event_A event_B1 event_r event_B2 event_F"/>
+        <test_sequence id="seq3_not_even_number_of_A_but_B1_can_be_prevented_at_the_end" expected="UNMARK"
+                       sequence="event_A event_A event_A event_B1 event_r event_B2"/>
+        <test_sequence id="seq4_B1_is_prevented" expected="REJECT"
+                       sequence="event_A event_A event_A event_B1 event_r event_B2 event_B1"/>
+    </test_sequences>
+
+</root>
+
+

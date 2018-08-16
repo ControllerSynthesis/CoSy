@@ -1,0 +1,75 @@
+automated_fabrication_scenario_A
+\BENCHMARKentry{A}{false}{0}{230}{ 0}{ 0}{ 1}{279}% 10
+\BENCHMARKentry{A}{ true}{1}{128}{ 4}{ 0}{15}{362}% 10
+\BENCHMARKentry{A}{ true}{1}{ 16}{ 2}{ 0}{13}{386}% 10
+\BENCHMARKentry{A}{ true}{1}{  1}{ 1}{ 0}{12}{433}% 10
+\BENCHMARKentry{A}{ true}{1}{230}{ 4}{ 0}{14}{364}% 10
+\BENCHMARKentry{A}{ true}{1}{  2}{ 1}{ 0}{12}{417}% 10
+\BENCHMARKentry{A}{ true}{1}{ 32}{ 4}{ 0}{14}{363}% 10
+\BENCHMARKentry{A}{ true}{1}{  3}{ 1}{ 0}{16}{330}% 10
+\BENCHMARKentry{A}{ true}{1}{  4}{ 2}{ 0}{12}{403}% 10
+\BENCHMARKentry{A}{ true}{1}{  5}{ 2}{ 0}{16}{314}% 10
+\BENCHMARKentry{A}{ true}{1}{ 64}{ 4}{ 0}{15}{351}% 10
+\BENCHMARKentry{A}{ true}{1}{  8}{ 2}{ 0}{13}{383}% 10
+\BENCHMARKentry{A}{ true}{2}{128}{ 4}{ 0}{15}{369}% 10
+\BENCHMARKentry{A}{ true}{2}{ 16}{ 3}{ 0}{13}{393}% 10
+\BENCHMARKentry{A}{ true}{2}{  1}{ 1}{ 0}{13}{442}% 10
+\BENCHMARKentry{A}{ true}{2}{230}{ 4}{ 0}{15}{364}% 10
+\BENCHMARKentry{A}{ true}{2}{  2}{ 1}{ 0}{13}{422}% 10
+\BENCHMARKentry{A}{ true}{2}{ 32}{ 4}{ 0}{15}{367}% 10
+\BENCHMARKentry{A}{ true}{2}{  3}{ 1}{ 0}{16}{328}% 10
+\BENCHMARKentry{A}{ true}{2}{  4}{ 2}{ 0}{13}{403}% 10
+\BENCHMARKentry{A}{ true}{2}{  5}{ 2}{ 0}{16}{320}% 10
+\BENCHMARKentry{A}{ true}{2}{ 64}{ 4}{ 0}{15}{358}% 10
+\BENCHMARKentry{A}{ true}{2}{  8}{ 3}{ 0}{13}{393}% 10
+\BENCHMARKentry{A}{ true}{3}{230}{ 4}{ 0}{20}{289}% 10
+\BENCHMARKentry{A}{ true}{3}{  3}{ 1}{ 0}{16}{339}% 10
+\BENCHMARKentry{A}{ true}{3}{  5}{ 2}{ 0}{17}{324}% 10
+automated_fabrication_scenario_B
+\BENCHMARKentry{A}{ true}{0}{128}{ 3}{ 0}{15}{346}% 10
+\BENCHMARKentry{A}{ true}{0}{ 16}{ 3}{ 0}{13}{366}% 10
+\BENCHMARKentry{A}{ true}{0}{  1}{ 1}{ 0}{14}{486}% 10
+\BENCHMARKentry{A}{false}{0}{230}{ 0}{ 0}{ 1}{291}% 10
+\BENCHMARKentry{A}{ true}{0}{230}{ 3}{ 0}{15}{339}% 10
+\BENCHMARKentry{A}{ true}{0}{  2}{ 1}{ 0}{13}{436}% 10
+\BENCHMARKentry{A}{ true}{0}{ 32}{ 3}{ 0}{15}{342}% 10
+\BENCHMARKentry{A}{ true}{0}{  3}{ 2}{ 0}{22}{450}% 10
+\BENCHMARKentry{A}{ true}{0}{  4}{ 2}{ 0}{13}{392}% 10
+\BENCHMARKentry{A}{ true}{0}{ 64}{ 3}{ 0}{15}{337}% 10
+\BENCHMARKentry{A}{ true}{0}{  7}{ 3}{ 0}{20}{341}% 10
+\BENCHMARKentry{A}{ true}{0}{  8}{ 3}{ 0}{13}{364}% 10
+\BENCHMARKentry{A}{ true}{1}{128}{ 0}{ 0}{ 1}{469}% 10
+\BENCHMARKentry{A}{ true}{1}{ 16}{ 0}{ 0}{ 1}{467}% 10
+\BENCHMARKentry{A}{ true}{1}{  1}{ 0}{ 0}{ 1}{499}% 10
+\BENCHMARKentry{A}{ true}{1}{230}{ 0}{ 0}{ 1}{455}% 10
+\BENCHMARKentry{A}{ true}{1}{  2}{ 0}{ 0}{ 1}{479}% 10
+\BENCHMARKentry{A}{ true}{1}{ 32}{ 0}{ 0}{ 1}{457}% 10
+\BENCHMARKentry{A}{ true}{1}{  4}{ 0}{ 0}{ 1}{478}% 10
+\BENCHMARKentry{A}{ true}{1}{ 64}{ 0}{ 0}{ 1}{459}% 10
+\BENCHMARKentry{A}{ true}{1}{  8}{ 0}{ 0}{ 1}{470}% 10
+\BENCHMARKentry{A}{ true}{2}{128}{ 0}{ 0}{ 1}{476}% 10
+\BENCHMARKentry{A}{ true}{2}{ 16}{ 0}{ 0}{ 1}{501}% 10
+\BENCHMARKentry{A}{ true}{2}{  1}{ 0}{ 0}{ 1}{492}% 10
+\BENCHMARKentry{A}{ true}{2}{230}{ 0}{ 0}{ 1}{485}% 10
+\BENCHMARKentry{A}{ true}{2}{  2}{ 0}{ 0}{ 1}{494}% 10
+\BENCHMARKentry{A}{ true}{2}{ 32}{ 0}{ 0}{ 1}{477}% 10
+\BENCHMARKentry{A}{ true}{2}{  4}{ 0}{ 0}{ 1}{491}% 10
+\BENCHMARKentry{A}{ true}{2}{ 64}{ 0}{ 0}{ 1}{487}% 10
+\BENCHMARKentry{A}{ true}{2}{  8}{ 0}{ 0}{ 1}{497}% 10
+automated_fabrication_scenario_CV3
+\BENCHMARKentry{A}{false}{0}{230}{ 0}{ 0}{ 1}{297}% 10
+\BENCHMARKentry{A}{ true}{1}{128}{45}{ 4}{51}{549}% 10
+\BENCHMARKentry{A}{ true}{1}{ 16}{ 7}{ 3}{44}{588}% 10
+\BENCHMARKentry{A}{ true}{1}{230}{73}{ 4}{57}{537}% 10
+\BENCHMARKentry{A}{ true}{1}{ 32}{13}{ 4}{23}{609}% 10
+\BENCHMARKentry{A}{ true}{1}{  4}{ 4}{ 3}{37}{616}% 10
+\BENCHMARKentry{A}{ true}{1}{ 64}{24}{ 4}{39}{574}% 10
+\BENCHMARKentry{A}{ true}{1}{  8}{ 5}{ 3}{37}{612}% 10
+automated_fabrication_scenario_CV2
+\BENCHMARKentry{A}{false}{0}{230}{ 0}{ 0}{ 1}{337}% 10
+\BENCHMARKentry{A}{ true}{1}{128}{133}{767}{ 2}{982}% 10
+\BENCHMARKentry{A}{false}{1}{230}{ 0}{ 0}{ 1}{359}% 10
+\BENCHMARKentry{A}{ true}{1}{230}{198}{751}{30}{949}% 10
+\BENCHMARKentry{A}{ true}{2}{230}{174}{928}{27}{410}% 10
+\BENCHMARKentry{A}{ true}{3}{230}{182}{933}{15}{409}% 10
+automated_fabrication_scenario_CV1

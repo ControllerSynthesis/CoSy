@@ -1,0 +1,82 @@
+automated_fabrication_scenario_A
+\BENCHMARKentry{B}{false}{0}{355}{ 0}{ 0}{ 1}{248}% 10
+\BENCHMARKentry{B}{ true}{1}{128}{ 4}{ 0}{18}{314}% 10
+\BENCHMARKentry{B}{ true}{1}{ 16}{ 2}{ 0}{16}{332}% 10
+\BENCHMARKentry{B}{ true}{1}{  1}{ 1}{ 0}{14}{381}% 10
+\BENCHMARKentry{B}{ true}{1}{256}{ 4}{ 0}{17}{320}% 10
+\BENCHMARKentry{B}{ true}{1}{  2}{ 1}{ 0}{14}{358}% 10
+\BENCHMARKentry{B}{ true}{1}{ 32}{ 4}{ 0}{18}{312}% 10
+\BENCHMARKentry{B}{ true}{1}{355}{ 4}{ 0}{17}{317}% 10
+\BENCHMARKentry{B}{ true}{1}{  3}{ 1}{ 0}{21}{284}% 10
+\BENCHMARKentry{B}{ true}{1}{  4}{ 2}{ 0}{15}{334}% 10
+\BENCHMARKentry{B}{ true}{1}{ 64}{ 4}{ 0}{18}{315}% 10
+\BENCHMARKentry{B}{ true}{1}{  6}{ 2}{ 0}{21}{273}% 10
+\BENCHMARKentry{B}{ true}{1}{  8}{ 2}{ 0}{16}{337}% 10
+\BENCHMARKentry{B}{ true}{2}{128}{ 4}{ 0}{19}{322}% 10
+\BENCHMARKentry{B}{ true}{2}{ 16}{ 3}{ 0}{16}{338}% 10
+\BENCHMARKentry{B}{ true}{2}{  1}{ 1}{ 0}{15}{390}% 10
+\BENCHMARKentry{B}{ true}{2}{256}{ 4}{ 0}{19}{335}% 10
+\BENCHMARKentry{B}{ true}{2}{  2}{ 1}{ 0}{15}{372}% 10
+\BENCHMARKentry{B}{ true}{2}{ 32}{ 4}{ 0}{19}{321}% 10
+\BENCHMARKentry{B}{ true}{2}{355}{ 4}{ 0}{18}{336}% 10
+\BENCHMARKentry{B}{ true}{2}{  3}{ 1}{ 0}{20}{291}% 10
+\BENCHMARKentry{B}{ true}{2}{  4}{ 2}{ 0}{16}{352}% 10
+\BENCHMARKentry{B}{ true}{2}{ 64}{ 4}{ 0}{19}{323}% 10
+\BENCHMARKentry{B}{ true}{2}{  6}{ 2}{ 0}{21}{278}% 10
+\BENCHMARKentry{B}{ true}{2}{  8}{ 3}{ 0}{17}{335}% 10
+\BENCHMARKentry{B}{ true}{3}{355}{ 4}{ 0}{24}{264}% 10
+\BENCHMARKentry{B}{ true}{3}{  3}{ 1}{ 0}{20}{296}% 10
+\BENCHMARKentry{B}{ true}{3}{  5}{ 2}{ 0}{21}{289}% 10
+automated_fabrication_scenario_B
+\BENCHMARKentry{B}{ true}{0}{128}{ 3}{ 0}{17}{339}% 10
+\BENCHMARKentry{B}{ true}{0}{ 16}{ 3}{ 0}{16}{353}% 10
+\BENCHMARKentry{B}{ true}{0}{  1}{ 1}{ 0}{16}{451}% 10
+\BENCHMARKentry{B}{ true}{0}{256}{ 3}{ 0}{16}{327}% 10
+\BENCHMARKentry{B}{ true}{0}{  2}{ 1}{ 0}{15}{405}% 10
+\BENCHMARKentry{B}{ true}{0}{ 32}{ 3}{ 0}{17}{337}% 10
+\BENCHMARKentry{B}{false}{0}{355}{ 0}{ 0}{ 1}{258}% 10
+\BENCHMARKentry{B}{ true}{0}{355}{ 3}{ 0}{16}{332}% 10
+\BENCHMARKentry{B}{ true}{0}{  3}{ 2}{ 0}{26}{405}% 10
+\BENCHMARKentry{B}{ true}{0}{  4}{ 2}{ 0}{16}{382}% 10
+\BENCHMARKentry{B}{ true}{0}{ 64}{ 3}{ 0}{17}{333}% 10
+\BENCHMARKentry{B}{ true}{0}{  7}{ 3}{ 0}{25}{331}% 10
+\BENCHMARKentry{B}{ true}{0}{  8}{ 3}{ 0}{16}{357}% 10
+\BENCHMARKentry{B}{ true}{1}{128}{ 0}{ 0}{ 2}{418}% 10
+\BENCHMARKentry{B}{ true}{1}{ 16}{ 0}{ 0}{ 2}{444}% 10
+\BENCHMARKentry{B}{ true}{1}{  1}{ 0}{ 0}{ 2}{439}% 10
+\BENCHMARKentry{B}{ true}{1}{256}{ 0}{ 0}{ 2}{423}% 10
+\BENCHMARKentry{B}{ true}{1}{  2}{ 0}{ 0}{ 2}{440}% 10
+\BENCHMARKentry{B}{ true}{1}{ 32}{ 0}{ 0}{ 2}{412}% 10
+\BENCHMARKentry{B}{ true}{1}{355}{ 0}{ 0}{ 2}{430}% 10
+\BENCHMARKentry{B}{ true}{1}{  4}{ 0}{ 0}{ 2}{433}% 10
+\BENCHMARKentry{B}{ true}{1}{ 64}{ 0}{ 0}{ 2}{412}% 10
+\BENCHMARKentry{B}{ true}{1}{  8}{ 0}{ 0}{ 2}{438}% 10
+\BENCHMARKentry{B}{ true}{2}{128}{ 0}{ 0}{ 2}{441}% 10
+\BENCHMARKentry{B}{ true}{2}{ 16}{ 0}{ 0}{ 2}{452}% 10
+\BENCHMARKentry{B}{ true}{2}{  1}{ 0}{ 0}{ 2}{454}% 10
+\BENCHMARKentry{B}{ true}{2}{256}{ 0}{ 0}{ 2}{429}% 10
+\BENCHMARKentry{B}{ true}{2}{  2}{ 0}{ 0}{ 2}{456}% 10
+\BENCHMARKentry{B}{ true}{2}{ 32}{ 0}{ 0}{ 2}{437}% 10
+\BENCHMARKentry{B}{ true}{2}{355}{ 0}{ 0}{ 2}{445}% 10
+\BENCHMARKentry{B}{ true}{2}{  4}{ 0}{ 0}{ 2}{455}% 10
+\BENCHMARKentry{B}{ true}{2}{ 64}{ 0}{ 0}{ 2}{440}% 10
+\BENCHMARKentry{B}{ true}{2}{  8}{ 0}{ 0}{ 2}{455}% 10
+automated_fabrication_scenario_CV3
+\BENCHMARKentry{B}{false}{0}{355}{ 0}{ 0}{ 1}{267}% 10
+\BENCHMARKentry{B}{ true}{1}{128}{45}{ 6}{20}{496}% 10
+\BENCHMARKentry{B}{ true}{1}{ 16}{ 7}{ 5}{ 2}{566}% 10
+\BENCHMARKentry{B}{ true}{1}{256}{84}{ 6}{36}{489}% 10
+\BENCHMARKentry{B}{ true}{1}{ 32}{13}{ 5}{40}{558}% 10
+\BENCHMARKentry{B}{ true}{1}{355}{94}{ 6}{27}{487}% 10
+\BENCHMARKentry{B}{ true}{1}{  4}{ 4}{ 4}{51}{588}% 10
+\BENCHMARKentry{B}{ true}{1}{ 64}{24}{ 5}{58}{529}% 10
+\BENCHMARKentry{B}{ true}{1}{  8}{ 5}{ 4}{54}{583}% 10
+automated_fabrication_scenario_CV2
+\BENCHMARKentry{B}{false}{0}{355}{ 0}{ 0}{ 1}{303}% 10
+\BENCHMARKentry{B}{ true}{1}{128}{133}{950}{ 5}{920}% 10
+\BENCHMARKentry{B}{ true}{1}{256}{202}{921}{12}{895}% 10
+\BENCHMARKentry{B}{false}{1}{355}{ 0}{ 0}{ 1}{318}% 10
+\BENCHMARKentry{B}{ true}{1}{355}{225}{922}{37}{888}% 10
+\BENCHMARKentry{B}{ true}{2}{355}{222}{1249}{44}{439}% 10
+\BENCHMARKentry{B}{ true}{3}{355}{225}{1259}{36}{444}% 10
+automated_fabrication_scenario_CV1

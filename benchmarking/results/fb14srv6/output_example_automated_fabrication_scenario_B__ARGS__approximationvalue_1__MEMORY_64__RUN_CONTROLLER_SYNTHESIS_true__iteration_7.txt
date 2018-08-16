@@ -1,0 +1,29 @@
+arguments: debug_computations       = false
+arguments: run_controller_synthesis = true
+arguments: approximationvalue       = 1
+arguments: example                  = example_automated_fabrication_scenario_B
+arguments: (forwarded)              = []
+F_DPDA_DFA_CC result: (states=1180, edges=3079, stacks=121)
+	Command being timed: "/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -Xmx64G -XX:+CrashOnOutOfMemoryError -Dlog4j.configurationFile=log4j2_productive.xml -jar cosy.jar debug_computations false run_controller_synthesis true approximationvalue 1 example example_automated_fabrication_scenario_B --"
+	User time (seconds): 5.87
+	System time (seconds): 0.60
+	Percent of CPU this job got: 453%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 379520
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 106502
+	Voluntary context switches: 26861
+	Involuntary context switches: 597
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 136
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

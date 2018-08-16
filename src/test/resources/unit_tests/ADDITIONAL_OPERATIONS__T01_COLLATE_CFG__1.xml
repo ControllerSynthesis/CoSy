@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<root
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../main/resources/cosy.xsd">
+
+    <!--
+    author: Sven Schneider
+    copyright: all rights reserved, 2018
+    -->
+
+    <string_symbol id="event_a" string="a"/>
+    <string_symbol id="event_b" string="b"/>
+    <string_symbol id="S" string="S"/>
+    <string_symbol id="A" string="A"/>
+    <string_symbol id="B" string="B"/>
+    <string_symbol id="C" string="C"/>
+    <string_symbol id="D" string="D"/>
+    <two_elements__teB id="beB_a" value="event_a"/>
+    <two_elements__teB id="beB_b" value="event_b"/>
+    <two_elements__teA id="beA_S" value="S"/>
+    <two_elements__teA id="beA_A" value="A"/>
+    <two_elements__teA id="beA_B" value="B"/>
+    <two_elements__teA id="beA_C" value="C"/>
+    <two_elements__teA id="beA_D" value="D"/>
+    <cfg_step_label id="prod_0" prod_lhs="S" prod_rhs="beB_a beA_B"/>
+    <cfg_step_label id="prod_1" prod_lhs="B" prod_rhs="beA_C beA_D"/>
+    <cfg_step_label id="prod_2" prod_lhs="C" prod_rhs="beB_a beA_C"/>
+    <cfg_step_label id="prod_3" prod_lhs="D" prod_rhs="beA_D beA_A"/>
+    <cfg_step_label id="prod_4" prod_lhs="A" prod_rhs="beB_a"/>
+    <cfg_step_label id="prod_5" prod_lhs="D"/>
+    <cfg
+            id="cfg"
+            cfg_nonterminals="S A B C D"
+            cfg_events="event_a event_b"
+            cfg_initial="S"
+            cfg_step_labels="prod_0 prod_1 prod_2 prod_3 prod_4 prod_5"/>
+
+
+</root>

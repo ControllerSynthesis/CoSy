@@ -1,0 +1,52 @@
+arguments: debug_computations       = false
+arguments: run_controller_synthesis = true
+arguments: approximationvalue       = 1
+arguments: example                  = example_automated_fabrication_scenario_C
+arguments: (forwarded)              = [0, 1, 1, 2, 1]
+arguments: num_shared_pieces_BC   : 0
+arguments: num_nonshared_pieces_B : 1
+arguments: num_nonshared_pieces_C : 1
+arguments: stack_lengthm          : 2
+arguments: concurrent_orders      : 1
+Aborting due to java.lang.OutOfMemoryError: GC overhead limit exceeded
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (debug.cpp:308), pid=14421, tid=0x00007fb99343c700
+#  fatal error: OutOfMemory encountered: GC overhead limit exceeded
+#
+# JRE version: OpenJDK Runtime Environment (8.0_162-b12) (build 1.8.0_162-8u162-b12-1~deb9u1-b12)
+# Java VM: OpenJDK 64-Bit Server VM (25.162-b12 mixed mode linux-amd64 compressed oops)
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /home/sschneider/Cosy/hs_err_pid14421.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+Command terminated by signal 6
+	Command being timed: "/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -Xmx1G -XX:+CrashOnOutOfMemoryError -Dlog4j.configurationFile=log4j2_productive.xml -jar cosy.jar debug_computations false run_controller_synthesis true approximationvalue 1 example example_automated_fabrication_scenario_C -- 0 1 1 2 1"
+	User time (seconds): 2487.00
+	System time (seconds): 21.84
+	Percent of CPU this job got: 1591%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:37.65
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1228156
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 8869055
+	Voluntary context switches: 231523
+	Involuntary context switches: 32848
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 22776
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+:: JAVA ERROR ::

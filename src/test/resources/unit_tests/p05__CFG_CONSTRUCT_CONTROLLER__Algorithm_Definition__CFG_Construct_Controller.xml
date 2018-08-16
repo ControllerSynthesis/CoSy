@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<root
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../main/resources/cosy.xsd">
+
+    <!--
+    author: Sven Schneider
+    copyright: all rights reserved, 2018
+    -->
+
+    <!-- EPDA -->
+    <string_symbol id="e_a" string="a"/>
+    <string_symbol id="e_b" string="b"/>
+    <string_symbol id="e_c" string="c"/>
+    <string_symbol id="e_u" string="u"/>
+    <string_symbol id="e_e" string="e"/>
+    <string_symbol id="e_d" string="d"/>
+    <string_symbol id="sB" string="☐"/>
+    <string_symbol id="s1" string="•"/>
+    <string_symbol id="s2" string="○"/>
+    <string_symbol id="q0" string="q0"/>
+    <string_symbol id="q1" string="q1"/>
+    <string_symbol id="q2" string="q2"/>
+    <string_symbol id="q3" string="q3"/>
+    <string_symbol id="q4" string="q4"/>
+    <string_symbol id="q5" string="q5"/>
+    <string_symbol id="q6" string="q6"/>
+
+    <epda_step_label id="es_01" edge_src="q0" edge_event="e_a" edge_pop="sB" edge_push="s1 sB" edge_trg="q0"/>
+    <epda_step_label id="es_02" edge_src="q0" edge_event="e_a" edge_pop="s1" edge_push="s1 s1" edge_trg="q0"/>
+    <epda_step_label id="es_03" edge_src="q0" edge_event="e_a" edge_pop="s2" edge_push="s1 s2" edge_trg="q0"/>
+    <epda_step_label id="es_04" edge_src="q0" edge_event="e_b" edge_pop="sB" edge_push="s2 sB" edge_trg="q0"/>
+    <epda_step_label id="es_05" edge_src="q0" edge_event="e_b" edge_pop="s1" edge_push="s2 s1" edge_trg="q0"/>
+    <epda_step_label id="es_06" edge_src="q0" edge_event="e_b" edge_pop="s2" edge_push="s2 s2" edge_trg="q0"/>
+
+    <epda_step_label id="es_07" edge_src="q0" edge_event="e_c" edge_pop="s1" edge_push="s1" edge_trg="q1"/>
+    <epda_step_label id="es_08" edge_src="q0" edge_event="e_c" edge_pop="sB" edge_push="sB" edge_trg="q1"/>
+
+    <epda_step_label id="es_09" edge_src="q1" edge_event="e_u" edge_pop="s1" edge_trg="q2"/>
+
+    <epda_step_label id="es_10" edge_src="q2" edge_event="e_e" edge_pop="s2" edge_push="s2" edge_trg="q3"/>
+
+    <epda_step_label id="es_11" edge_src="q2" edge_event="e_d" edge_pop="s1" edge_push="s1" edge_trg="q1"/>
+    <epda_step_label id="es_12" edge_src="q2" edge_event="e_d" edge_pop="sB" edge_push="sB" edge_trg="q1"/>
+    <epda
+            id="spec"
+            epda_states="q0 q1 q2 q3"
+            epda_events="e_a e_b e_c e_u e_e e_d"
+            epda_gamma="sB s1 s2"
+            epda_delta="es_01 es_02 es_03 es_04 es_05 es_06 es_07 es_08 es_09 es_10 es_11 es_12"
+            epda_initial="q0"
+            epda_eos="sB"
+            epda_marking="q1 q3"/>
+
+    <epda_step_label id="ep_01" edge_src="q0" edge_event="e_a" edge_pop="sB" edge_push="sB" edge_trg="q0"/>
+    <epda_step_label id="ep_02" edge_src="q0" edge_event="e_b" edge_pop="sB" edge_push="sB" edge_trg="q0"/>
+    <epda_step_label id="ep_03" edge_src="q0" edge_event="e_c" edge_pop="sB" edge_push="sB" edge_trg="q1"/>
+    <epda_step_label id="ep_04" edge_src="q1" edge_event="e_u" edge_pop="sB" edge_push="sB" edge_trg="q2"/>
+    <epda_step_label id="ep_05" edge_src="q2" edge_event="e_e" edge_pop="sB" edge_push="sB" edge_trg="q3"/>
+    <epda_step_label id="ep_06" edge_src="q2" edge_event="e_d" edge_pop="sB" edge_push="sB" edge_trg="q1"/>
+    <epda
+            id="plant"
+            epda_states="q0 q1 q2 q3"
+            epda_events="e_a e_b e_c e_u e_e e_d"
+            epda_gamma="sB"
+            epda_delta="ep_01 ep_02 ep_03 ep_04 ep_05 ep_06"
+            epda_initial="q0"
+            epda_eos="sB"
+            epda_marking="q1 q3"/>
+
+    <!-- sigmaUC -->
+    <sigma_uncontrollable id="sigmaUC" elements="e_u"/>
+
+
+    <!-- set1 -->
+    <epda_step_label id="edge_set1_01" edge_src="q0" edge_event="e_c" edge_pop="sB" edge_push="sB" edge_trg="q1"/>
+    <epda
+            id="dpda_set1"
+            epda_states="q0 q1"
+            epda_events="e_a e_b e_c e_u e_e e_d"
+            epda_gamma="sB"
+            epda_delta="edge_set1_01"
+            epda_initial="q0"
+            epda_eos="sB"
+            epda_marking="q1"/>
+
+    <!-- set2 -->
+    <epda_step_label id="edge_set2_01" edge_src="q0" edge_event="e_a" edge_pop="sB" edge_push="sB" edge_trg="q1"/>
+    <epda_step_label id="edge_set2_02" edge_src="q1" edge_event="e_a" edge_pop="sB" edge_push="sB" edge_trg="q1"/>
+    <epda_step_label id="edge_set2_03" edge_src="q1" edge_event="e_c" edge_pop="sB" edge_push="sB" edge_trg="q2"/>
+    <epda
+            id="dpda_set2"
+            epda_states="q0 q1 q2"
+            epda_events="e_a e_b e_c e_u e_e e_d"
+            epda_gamma="sB"
+            epda_delta="edge_set2_01 edge_set2_02 edge_set2_03"
+            epda_initial="q0"
+            epda_eos="sB"
+            epda_marking="q2"/>
+
+    <!-- set3 -->
+    <epda_step_label id="edge_set3_01" edge_src="q0" edge_event="e_a" edge_pop="sB" edge_push="sB" edge_trg="q0"/>
+    <epda_step_label id="edge_set3_02" edge_src="q0" edge_event="e_b" edge_pop="sB" edge_push="sB" edge_trg="q0"/>
+    <epda_step_label id="edge_set3_03" edge_src="q0" edge_event="e_b" edge_pop="sB" edge_push="sB" edge_trg="q1"/>
+    <epda_step_label id="edge_set3_04" edge_src="q1" edge_event="e_a" edge_pop="sB" edge_push="sB" edge_trg="q2"/>
+    <epda_step_label id="edge_set3_05" edge_src="q2" edge_event="e_a" edge_pop="sB" edge_push="sB" edge_trg="q2"/>
+    <epda_step_label id="edge_set3_06" edge_src="q2" edge_event="e_c" edge_pop="sB" edge_push="sB" edge_trg="q3"/>
+    <epda
+            id="dpda_set3"
+            epda_states="q0 q1 q2 q3"
+            epda_events="e_a e_b e_c e_u e_e e_d"
+            epda_gamma="sB"
+            epda_delta="edge_set3_01 edge_set3_02 edge_set3_03 edge_set3_04 edge_set3_05 edge_set3_06"
+            epda_initial="q0"
+            epda_eos="sB"
+            epda_marking="q3"/>
+
+    <!-- set4 -->
+    <epda_step_label id="edge_set4_01" edge_src="q0" edge_event="e_a" edge_pop="sB" edge_push="s1 sB" edge_trg="q1"/>
+    <epda_step_label id="edge_set4_02" edge_src="q1" edge_event="e_a" edge_pop="s1" edge_push="s1 s1" edge_trg="q1"/>
+    <epda_step_label id="edge_set4_03" edge_src="q1" edge_event="e_c" edge_pop="s1" edge_push="s1" edge_trg="q2"/>
+    <epda_step_label id="edge_set4_04" edge_src="q2" edge_event="e_u" edge_pop="s1" edge_trg="q3"/>
+    <epda_step_label id="edge_set4_05" edge_src="q3" edge_event="e_d" edge_pop="s1" edge_push="s1" edge_trg="q4"/>
+    <epda_step_label id="edge_set4_06" edge_src="q4" edge_event="e_u" edge_pop="s1" edge_trg="q3"/>
+    <epda
+            id="dpda_set4"
+            epda_states="q0 q1 q2 q3 q4"
+            epda_events="e_a e_b e_c e_u e_e e_d"
+            epda_gamma="sB s1"
+            epda_delta="edge_set4_01 edge_set4_02 edge_set4_03 edge_set4_04 edge_set4_05 edge_set4_06"
+            epda_initial="q0"
+            epda_eos="sB"
+            epda_marking="q2"/>
+
+    <!-- set5 -->
+    <epda_step_label id="edge_set5_01" edge_src="q0" edge_event="e_a" edge_pop="sB" edge_push="s1 sB" edge_trg="q1"/>
+    <epda_step_label id="edge_set5_02" edge_src="q1" edge_event="e_a" edge_pop="s1" edge_push="s1 s1" edge_trg="q1"/>
+    <epda_step_label id="edge_set5_03" edge_src="q1" edge_event="e_c" edge_pop="s1" edge_push="s1" edge_trg="q2"/>
+    <epda_step_label id="edge_set5_04" edge_src="q2" edge_event="e_u" edge_pop="s1" edge_trg="q3"/>
+    <epda_step_label id="edge_set5_05" edge_src="q3" edge_event="e_d" edge_pop="s1" edge_push="s1" edge_trg="q2"/>
+    <epda_step_label id="edge_set5_06" edge_src="q3" edge_event="e_d" edge_pop="sB" edge_push="sB" edge_trg="q4"/>
+    <epda
+            id="dpda_set5"
+            epda_states="q0 q1 q2 q3 q4"
+            epda_events="e_a e_b e_c e_u e_e e_d"
+            epda_gamma="sB s1"
+            epda_delta="edge_set5_01 edge_set5_02 edge_set5_03 edge_set5_04 edge_set5_05 edge_set5_06"
+            epda_initial="q0"
+            epda_eos="sB"
+            epda_marking="q4"/>
+
+    <!-- set6 -->
+    <epda_step_label id="edge_set6_01" edge_src="q0" edge_event="e_a" edge_pop="sB" edge_push="sB" edge_trg="q0"/>
+    <epda_step_label id="edge_set6_02" edge_src="q0" edge_event="e_b" edge_pop="sB" edge_push="sB" edge_trg="q0"/>
+    <epda_step_label id="edge_set6_03" edge_src="q0" edge_event="e_b" edge_pop="sB" edge_push="sB" edge_trg="q1"/>
+    <epda_step_label id="edge_set6_04" edge_src="q1" edge_event="e_a" edge_pop="sB" edge_push="sB" edge_trg="q2"/>
+    <epda_step_label id="edge_set6_05" edge_src="q2" edge_event="e_a" edge_pop="s1" edge_push="s1 s1" edge_trg="q2"/>
+    <epda_step_label id="edge_set6_06" edge_src="q2" edge_event="e_a" edge_pop="sB" edge_push="s1 sB" edge_trg="q2"/>
+    <epda_step_label id="edge_set6_07" edge_src="q2" edge_event="e_c" edge_pop="s1" edge_push="s1" edge_trg="q3"/>
+    <epda_step_label id="edge_set6_08" edge_src="q3" edge_event="e_u" edge_pop="s1" edge_trg="q4"/>
+    <epda_step_label id="edge_set6_09" edge_src="q4" edge_event="e_d" edge_pop="s1" edge_push="s1" edge_trg="q5"/>
+    <epda_step_label id="edge_set6_10" edge_src="q5" edge_event="e_u" edge_pop="s1" edge_trg="q4"/>
+    <epda
+            id="dpda_set6"
+            epda_states="q0 q1 q2 q3 q4 q5"
+            epda_events="e_a e_b e_c e_u e_e e_d"
+            epda_gamma="sB s1"
+            epda_delta="edge_set6_01 edge_set6_02 edge_set6_03 edge_set6_04 edge_set6_05 edge_set6_06 edge_set6_07 edge_set6_08 edge_set6_09 edge_set6_10"
+            epda_initial="q0"
+            epda_eos="sB"
+            epda_marking="q5"/>
+
+    <!-- set7 -->
+    <epda_step_label id="edge_set7_01" edge_src="q0" edge_event="e_a" edge_pop="sB" edge_push="sB" edge_trg="q0"/>
+    <epda_step_label id="edge_set7_02" edge_src="q0" edge_event="e_b" edge_pop="sB" edge_push="sB" edge_trg="q0"/>
+    <epda_step_label id="edge_set7_03" edge_src="q0" edge_event="e_b" edge_pop="sB" edge_push="sB" edge_trg="q1"/>
+    <epda_step_label id="edge_set7_04" edge_src="q1" edge_event="e_a" edge_pop="sB" edge_push="s1 sB" edge_trg="q2"/>
+    <epda_step_label id="edge_set7_05" edge_src="q2" edge_event="e_a" edge_pop="s1" edge_push="s1 s1" edge_trg="q2"/>
+    <epda_step_label id="edge_set7_06" edge_src="q2" edge_event="e_c" edge_pop="s1" edge_push="s1" edge_trg="q3"/>
+    <epda_step_label id="edge_set7_07" edge_src="q3" edge_event="e_u" edge_pop="s1" edge_trg="q4"/>
+    <epda_step_label id="edge_set7_08" edge_src="q4" edge_event="e_d" edge_pop="s1" edge_push="s1" edge_trg="q3"/>
+    <epda_step_label id="edge_set7_09" edge_src="q4" edge_event="e_e" edge_pop="sB" edge_push="sB" edge_trg="q5"/>
+    <epda
+            id="dpda_set7"
+            epda_states="q0 q1 q2 q3 q4 q5"
+            epda_events="e_a e_b e_c e_u e_e e_d"
+            epda_gamma="sB s1"
+            epda_delta="edge_set7_01 edge_set7_02 edge_set7_03 edge_set7_04 edge_set7_05 edge_set7_06 edge_set7_07 edge_set7_08 edge_set7_09"
+            epda_initial="q0"
+            epda_eos="sB"
+            epda_marking="q5"/>
+
+</root>

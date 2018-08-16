@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<root
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../main/resources/cosy.xsd">
+
+    <!--
+    author: Sven Schneider
+    copyright: all rights reserved, 2018
+    -->
+
+    <string_symbol id="event_a" string="a"/>
+    <string_symbol id="event_b" string="b"/>
+    <string_symbol id="event_c" string="c"/>
+    <two_elements__teB id="a" value="event_a"/>
+    <two_elements__teB id="b" value="event_b"/>
+    <two_elements__teB id="c" value="event_c"/>
+
+    <string_symbol id="nonterminal_0" string="Q0"/>
+    <string_symbol id="nonterminal_1" string="Q1"/>
+    <string_symbol id="nonterminal_2" string="Q2"/>
+    <string_symbol id="nonterminal_3" string="Q3"/>
+    <two_elements__teA id="Q0" value="nonterminal_0"/>
+    <two_elements__teA id="Q1" value="nonterminal_1"/>
+    <two_elements__teA id="Q2" value="nonterminal_2"/>
+    <two_elements__teA id="Q3" value="nonterminal_3"/>
+
+    <cfg_step_label id="prod_1" prod_lhs="nonterminal_0" prod_rhs="a Q1"/>
+    <cfg_step_label id="prod_2" prod_lhs="nonterminal_0" prod_rhs="b Q2"/>
+    <cfg_step_label id="prod_3" prod_lhs="nonterminal_1" prod_rhs="c Q3"/>
+    <cfg_step_label id="prod_4" prod_lhs="nonterminal_2" prod_rhs="c Q3"/>
+    <cfg_step_label id="prod_5" prod_lhs="nonterminal_3"/>
+    <cfg
+            id="input"
+            cfg_nonterminals="nonterminal_0 nonterminal_1 nonterminal_2 nonterminal_3"
+            cfg_events="event_a event_b event_c"
+            cfg_initial="nonterminal_0"
+            cfg_step_labels="prod_1 prod_2 prod_3 prod_4 prod_5"/>
+
+</root>
+

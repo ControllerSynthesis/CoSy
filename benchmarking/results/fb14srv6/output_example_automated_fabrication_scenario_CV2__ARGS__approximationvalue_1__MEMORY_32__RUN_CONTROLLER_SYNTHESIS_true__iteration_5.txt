@@ -1,0 +1,10 @@
+arguments: debug_computations       = false
+arguments: run_controller_synthesis = true
+arguments: approximationvalue       = 1
+arguments: example                  = example_automated_fabrication_scenario_C
+arguments: (forwarded)              = [1, 1, 1, 3, 1]
+arguments: num_shared_pieces_BC   : 1
+arguments: num_nonshared_pieces_B : 1
+arguments: num_nonshared_pieces_C : 1
+arguments: stack_lengthm          : 3
+arguments: concurrent_orders      : 1

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<root
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../main/resources/cosy.xsd">
+
+    <!--
+    author: Sven Schneider
+    copyright: all rights reserved, 2018
+    -->
+
+    <string_symbol id="event_a" string="a"/>
+    <string_symbol id="nonterminal_S" string="S"/>
+    <string_symbol id="nonterminal_D" string="D"/>
+    <string_symbol id="nonterminal_B" string="B"/>
+    <string_symbol id="nonterminal_A" string="A"/>
+
+    <two_elements__teB id="a" value="event_a"/>
+
+    <two_elements__teA id="S" value="nonterminal_S"/>
+    <two_elements__teA id="D" value="nonterminal_D"/>
+    <two_elements__teA id="B" value="nonterminal_B"/>
+    <two_elements__teA id="A" value="nonterminal_A"/>
+    <cfg_step_label id="prod_0" prod_lhs="nonterminal_S" prod_rhs="a A"/>
+    <cfg_step_label id="prod_1" prod_lhs="nonterminal_A" prod_rhs="B D"/>
+    <cfg_step_label id="prod_2" prod_lhs="nonterminal_B"/>
+    <cfg
+            id="input"
+            cfg_nonterminals="nonterminal_S nonterminal_D nonterminal_B nonterminal_A"
+            cfg_events="event_a"
+            cfg_initial="nonterminal_S"
+            cfg_step_labels="prod_0 prod_1 prod_2"/>
+
+</root>

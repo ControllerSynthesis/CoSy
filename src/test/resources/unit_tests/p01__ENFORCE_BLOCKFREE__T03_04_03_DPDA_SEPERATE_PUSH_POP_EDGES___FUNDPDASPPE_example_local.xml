@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<root
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../main/resources/cosy.xsd">
+
+    <!--
+    author: Sven Schneider
+    copyright: all rights reserved, 2018
+    -->
+
+    <string_symbol id="event_a" string="a"/>
+    <string_symbol id="box" string="☐"/>
+    <string_symbol id="bullet" string="•"/>
+    <string_symbol id="circ" string="○"/>
+    <string_symbol id="state_0" string="q0"/>
+    <string_symbol id="state_1" string="q1"/>
+    <string_symbol id="state_2" string="q2"/>
+    <string_symbol id="state_3" string="q3"/>
+
+    <epda_step_label id="edge_0" edge_src="state_0" edge_pop="box" edge_push="bullet box" edge_trg="state_1"/>
+    <epda_step_label id="edge_1" edge_src="state_1" edge_pop="bullet" edge_push="bullet circ" edge_trg="state_2"/>
+    <epda_step_label id="edge_2" edge_src="state_2" edge_pop="bullet" edge_trg="state_3"/>
+
+    <epda
+            id="input"
+            epda_states="state_0 state_1 state_2 state_3"
+            epda_events="event_a"
+            epda_gamma="box bullet circ"
+            epda_delta="edge_0 edge_1 edge_2"
+            epda_initial="state_0"
+            epda_eos="box"
+            epda_marking="state_3"/>
+
+</root>

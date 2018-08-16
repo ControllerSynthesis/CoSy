@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!--
+    author: Sven Schneider
+    copyright: all rights reserved, 2018
+    -->
+
+    <!-- TYPE_l2_l3_nonterminals__cons_l2 -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_l2_l3_nonterminals__cons_l2">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="value1" type="xs:IDREF" use="required"/>
+        <xs:attribute name="value2" type="xs:IDREF" use="required"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_l2_l3_nonterminals__cons_l2">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_l2_l3_nonterminals__cons_l2"/>
+    </xs:complexType>
+
+    <!-- TYPE_l2_l3_nonterminals__cons_l3 -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_l2_l3_nonterminals__cons_l3">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="value1" type="xs:IDREF"/>
+        <xs:attribute name="value2" type="xs:IDREF"/>
+        <xs:attribute name="value3" type="xs:IDREF"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_l2_l3_nonterminals__cons_l3">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_l2_l3_nonterminals__cons_l3"/>
+    </xs:complexType>
+
+    <!-- TYPE_state_and_stack_or_state__cons_state -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_state_and_stack_or_state__cons_state">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="value" type="xs:IDREF"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_state_and_stack_or_state__cons_state">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_state_and_stack_or_state__cons_state"/>
+    </xs:complexType>
+
+    <!-- TYPE_state_and_stack_or_state__cons_state_and_stack -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_state_and_stack_or_state__cons_state_and_stack">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="value1" type="xs:IDREF" use="required"/>
+        <xs:attribute name="value2" type="xs:IDREF" use="required"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_state_and_stack_or_state__cons_state_and_stack">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_state_and_stack_or_state__cons_state_and_stack"/>
+    </xs:complexType>
+
+    <!-- TYPE_state_or_edge_nat__cons_state_or_edge_nat_new -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_state_or_edge_nat__cons_state_or_edge_nat_new">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="value1" type="xs:IDREF"/>
+        <xs:attribute name="value2" type="xs:IDREF"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_state_or_edge_nat__cons_state_or_edge_nat_new">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_state_or_edge_nat__cons_state_or_edge_nat_new"/>
+    </xs:complexType>
+
+    <!-- TYPE_state_or_edge_nat__cons_state_or_edge_nat_old -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_state_or_edge_nat__cons_state_or_edge_nat_old">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="value" type="xs:IDREF"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_state_or_edge_nat__cons_state_or_edge_nat_old">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_state_or_edge_nat__cons_state_or_edge_nat_old"/>
+    </xs:complexType>
+
+    <!-- TYPE_state_or_state__cons_state_or_state_new -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_state_or_state__cons_state_or_state_new">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="value" type="xs:IDREF"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_state_or_state__cons_state_or_state_new">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_state_or_state__cons_state_or_state_new"/>
+    </xs:complexType>
+
+    <!-- TYPE_state_or_state__cons_state_or_state_old -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_state_or_state__cons_state_or_state_old">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="value" type="xs:IDREF"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_state_or_state__cons_state_or_state_old">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_state_or_state__cons_state_or_state_old"/>
+    </xs:complexType>
+
+    <!-- TYPE_symbol__cons_symbol_base -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_symbol__cons_symbol_base">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="value" type="xs:IDREF"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_symbol__cons_symbol_base">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_symbol__cons_symbol_base"/>
+    </xs:complexType>
+
+    <!-- TYPE_symbol__cons_symbol_nat -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_symbol__cons_symbol_nat">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="value" type="xs:integer"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_symbol__cons_symbol_nat">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_symbol__cons_symbol_nat"/>
+    </xs:complexType>
+
+    <!-- TYPE_state_or_edge__cons_state_or_edge_new -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_state_or_edge__cons_state_or_edge_new">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="value" type="xs:IDREF"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_state_or_edge__cons_state_or_edge_new">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_state_or_edge__cons_state_or_edge_new"/>
+    </xs:complexType>
+
+    <!-- TYPE_state_or_edge__cons_state_or_edge_old -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_state_or_edge__cons_state_or_edge_old">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="value" type="xs:IDREF"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_state_or_edge__cons_state_or_edge_old">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_state_or_edge__cons_state_or_edge_old"/>
+    </xs:complexType>
+
+    <!-- TYPE_tuple2 -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_tuple2">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="value1" type="xs:IDREF"/>
+        <xs:attribute name="value2" type="xs:IDREF"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_tuple2">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_tuple2"/>
+    </xs:complexType>
+
+    <!-- TYPE_tuple3 -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_tuple3">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="value1" type="xs:IDREF"/>
+        <xs:attribute name="value2" type="xs:IDREF"/>
+        <xs:attribute name="value3" type="xs:IDREF"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_tuple3">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_tuple3"/>
+    </xs:complexType>
+
+    <!-- TYPE_two_elements__teA -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_two_elements__teA">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="value" type="xs:IDREF" use="required"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_two_elements__teA">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_two_elements__teA"/>
+    </xs:complexType>
+
+    <!-- TYPE_two_elements__teB -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_two_elements__teB">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="value" type="xs:IDREF" use="required"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_two_elements__teB">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_two_elements__teB"/>
+    </xs:complexType>
+
+    <!-- TYPE_string_symbol -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_string_symbol">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="string" type="xs:token" use="required"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_string_symbol">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_string_symbol"/>
+    </xs:complexType>
+
+    <!-- TYPE_epda_step_label -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_epda_step_label">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="edge_src" type="xs:IDREF" use="required"/>
+        <xs:attribute name="edge_event" type="xs:IDREF" use="optional"/>
+        <xs:attribute name="edge_pop" type="xs:IDREFS" use="optional"/>
+        <xs:attribute name="edge_push" type="xs:IDREFS" use="optional"/>
+        <xs:attribute name="edge_trg" type="xs:IDREF" use="required"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_epda_step_label">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_epda_step_label"/>
+    </xs:complexType>
+
+    <!-- TYPE_epda_step_label_reference -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_epda_step_label_reference">
+        <xs:attribute name="ref" type="xs:IDREF" use="required"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_epda_step_label_reference">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_epda_step_label_reference"/>
+    </xs:complexType>
+
+    <!-- TYPE_epda -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_epda">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="epda_states" type="xs:IDREFS" use="required"/>
+        <xs:attribute name="epda_events" type="xs:IDREFS" use="optional"/>
+        <xs:attribute name="epda_gamma" type="xs:IDREFS" use="required"/>
+        <xs:attribute name="epda_delta" type="xs:IDREFS" use="optional"/>
+        <xs:attribute name="epda_initial" type="xs:IDREF" use="required"/>
+        <xs:attribute name="epda_eos" type="xs:IDREF" use="required"/>
+        <xs:attribute name="epda_marking" type="xs:IDREFS" use="optional"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_epda">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_epda"/>
+    </xs:complexType>
+
+    <!-- TYPE_cfg_step_label -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_cfg_step_label">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="prod_lhs" type="xs:IDREF" use="required"/>
+        <xs:attribute name="prod_rhs" type="xs:IDREFS" use="optional"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_cfg_step_label">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_cfg_step_label"/>
+    </xs:complexType>
+
+    <!-- TYPE_cfg -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_cfg">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="cfg_nonterminals" type="xs:IDREFS" use="required"/>
+        <xs:attribute name="cfg_events" type="xs:IDREFS" use="optional"/>
+        <xs:attribute name="cfg_initial" type="xs:IDREF" use="required"/>
+        <xs:attribute name="cfg_step_labels" type="xs:IDREFS" use="optional"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_cfg">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_cfg"/>
+    </xs:complexType>
+
+    <!-- TYPE_parser_step_label -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_parser_step_label">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="rule_lpop" type="xs:IDREFS" use="required"/>
+        <xs:attribute name="rule_rpop" type="xs:IDREFS" use="optional"/>
+        <xs:attribute name="rule_lpush" type="xs:IDREFS" use="required"/>
+        <xs:attribute name="rule_rpush" type="xs:IDREFS" use="optional"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_parser_step_label">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_parser_step_label"/>
+    </xs:complexType>
+
+    <!-- TYPE_parser -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_parser">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="parser_nonterms" type="xs:IDREFS" use="required"/>
+        <xs:attribute name="parser_events" type="xs:IDREFS" use="optional"/>
+        <xs:attribute name="parser_initial" type="xs:IDREF" use="required"/>
+        <xs:attribute name="parser_marking" type="xs:IDREFS" use="optional"/>
+        <xs:attribute name="parser_step_labels" type="xs:IDREFS" use="optional"/>
+        <xs:attribute name="parser_eoi" type="xs:IDREF" use="required"/>
+        <xs:attribute name="parser_marker" type="xs:IDREFS" use="optional"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_parser">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_parser"/>
+    </xs:complexType>
+
+    <!-- TYPE_sigma_uncontrollable -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_sigma_uncontrollable">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="elements" type="xs:IDREFS" use="optional"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_sigma_uncontrollable">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_sigma_uncontrollable"/>
+    </xs:complexType>
+
+    <!-- TYPE_test_sequence -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_test_sequence">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="expected" type="xs:string" use="required"/>
+        <xs:attribute name="sequence" type="xs:IDREFS" use="optional"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_test_sequence">
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_test_sequence"/>
+    </xs:complexType>
+
+    <!-- TYPE_test_sequences -->
+
+    <xs:attributeGroup name="ATTRIBUTES_TYPE_test_sequences">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="TYPE_test_sequences">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="test_sequence" type="TYPE_test_sequence"/>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attributeGroup ref="ATTRIBUTES_TYPE_test_sequences"/>
+    </xs:complexType>
+
+    <!-- root -->
+
+    <xs:complexType name="TYPE_root">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="root" type="TYPE_root"/>
+                <xs:element name="string_symbol" type="TYPE_string_symbol"/>
+                <xs:element name="l2_l3_nonterminals__cons_l2" type="TYPE_l2_l3_nonterminals__cons_l2"/>
+                <xs:element name="l2_l3_nonterminals__cons_l3" type="TYPE_l2_l3_nonterminals__cons_l3"/>
+                <xs:element name="state_and_stack_or_state__cons_state"
+                            type="TYPE_state_and_stack_or_state__cons_state"/>
+                <xs:element name="state_and_stack_or_state__cons_state_and_stack"
+                            type="TYPE_state_and_stack_or_state__cons_state_and_stack"/>
+                <xs:element name="state_or_edge__cons_state_or_edge_new"
+                            type="TYPE_state_or_edge__cons_state_or_edge_new"/>
+                <xs:element name="state_or_edge__cons_state_or_edge_old"
+                            type="TYPE_state_or_edge__cons_state_or_edge_old"/>
+                <xs:element name="state_or_edge_nat__cons_state_or_edge_nat_new"
+                            type="TYPE_state_or_edge_nat__cons_state_or_edge_nat_new"/>
+                <xs:element name="state_or_edge_nat__cons_state_or_edge_nat_old"
+                            type="TYPE_state_or_edge_nat__cons_state_or_edge_nat_old"/>
+                <xs:element name="state_or_state__cons_state_or_state_new"
+                            type="TYPE_state_or_state__cons_state_or_state_new"/>
+                <xs:element name="state_or_state__cons_state_or_state_old"
+                            type="TYPE_state_or_state__cons_state_or_state_old"/>
+                <xs:element name="symbol__cons_symbol_base" type="TYPE_symbol__cons_symbol_base"/>
+                <xs:element name="symbol__cons_symbol_nat" type="TYPE_symbol__cons_symbol_nat"/>
+                <xs:element name="tuple2" type="TYPE_tuple2"/>
+                <xs:element name="tuple3" type="TYPE_tuple3"/>
+                <xs:element name="two_elements__teA" type="TYPE_two_elements__teA"/>
+                <xs:element name="two_elements__teB" type="TYPE_two_elements__teB"/>
+                <xs:element name="epda_step_label"
+                            type="TYPE_epda_step_label"/>
+                <xs:element name="epda" type="TYPE_epda"/>
+                <xs:element name="cfg_step_label" type="TYPE_cfg_step_label"/>
+                <xs:element name="cfg" type="TYPE_cfg"/>
+                <xs:element name="parser_step_label" type="TYPE_parser_step_label"/>
+                <xs:element name="parser" type="TYPE_parser"/>
+                <xs:element name="sigma_uncontrollable" type="TYPE_sigma_uncontrollable"/>
+                <xs:element name="test_sequences" type="TYPE_test_sequences"/>
+
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="root" type="TYPE_root"/>
+
+</xs:schema>

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<root
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../main/resources/cosy.xsd">
+
+    <!--
+    author: Sven Schneider
+    copyright: all rights reserved, 2018
+    -->
+
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-1" value="0"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-2" value="1"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-3" value="2"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-4" value="3"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-5" value="4"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-6" value="5"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-7" value="6"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-8" value="7"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-9" value="8"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-10" value="9"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-11" value="10"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-12" value="11"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-13" value="12"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-14" value="13"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-15" value="14"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-16" value="15"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-17" value="16"/>
+    <symbol__cons_symbol_nat id="symbol__cons_symbol_nat-18" value="17"/>
+    <string_symbol id="string_symbol-1" string="r"/>
+    <two_elements__teA id="two_elements__teA-1" value="symbol__cons_symbol_nat-16"/>
+    <two_elements__teA id="two_elements__teA-2" value="symbol__cons_symbol_nat-18"/>
+    <cfg_step_label id="cfg_step_label-1" prod_lhs="symbol__cons_symbol_nat-5"
+                    prod_rhs="two_elements__teA-1 two_elements__teA-2"/>
+    <cfg_step_label id="cfg_step_label-2" prod_lhs="symbol__cons_symbol_nat-16"/>
+    <two_elements__teB id="two_elements__teB-1" value="string_symbol-1"/>
+    <two_elements__teA id="two_elements__teA-3" value="symbol__cons_symbol_nat-3"/>
+    <cfg_step_label id="cfg_step_label-3" prod_lhs="symbol__cons_symbol_nat-18"
+                    prod_rhs="two_elements__teB-1 two_elements__teA-3"/>
+    <two_elements__teA id="two_elements__teA-4" value="symbol__cons_symbol_nat-11"/>
+    <cfg_step_label id="cfg_step_label-4" prod_lhs="symbol__cons_symbol_nat-3" prod_rhs="two_elements__teA-4"/>
+    <two_elements__teA id="two_elements__teA-5" value="symbol__cons_symbol_nat-9"/>
+    <two_elements__teA id="two_elements__teA-6" value="symbol__cons_symbol_nat-4"/>
+    <cfg_step_label id="cfg_step_label-5" prod_lhs="symbol__cons_symbol_nat-11"
+                    prod_rhs="two_elements__teA-5 two_elements__teA-6"/>
+    <cfg_step_label id="cfg_step_label-6" prod_lhs="symbol__cons_symbol_nat-9"/>
+    <two_elements__teA id="two_elements__teA-7" value="symbol__cons_symbol_nat-12"/>
+    <cfg_step_label id="cfg_step_label-7" prod_lhs="symbol__cons_symbol_nat-4"
+                    prod_rhs="two_elements__teB-1 two_elements__teA-7"/>
+    <two_elements__teA id="two_elements__teA-8" value="symbol__cons_symbol_nat-8"/>
+    <two_elements__teA id="two_elements__teA-9" value="symbol__cons_symbol_nat-10"/>
+    <cfg_step_label id="cfg_step_label-8" prod_lhs="symbol__cons_symbol_nat-12"
+                    prod_rhs="two_elements__teA-8 two_elements__teA-9"/>
+    <two_elements__teA id="two_elements__teA-10" value="symbol__cons_symbol_nat-13"/>
+    <two_elements__teA id="two_elements__teA-11" value="symbol__cons_symbol_nat-6"/>
+    <cfg_step_label id="cfg_step_label-9" prod_lhs="symbol__cons_symbol_nat-8"
+                    prod_rhs="two_elements__teA-10 two_elements__teA-11"/>
+    <two_elements__teA id="two_elements__teA-12" value="symbol__cons_symbol_nat-17"/>
+    <cfg_step_label id="cfg_step_label-10" prod_lhs="symbol__cons_symbol_nat-10"
+                    prod_rhs="two_elements__teA-10 two_elements__teA-12"/>
+    <cfg_step_label id="cfg_step_label-11" prod_lhs="symbol__cons_symbol_nat-13"/>
+    <two_elements__teA id="two_elements__teA-13" value="symbol__cons_symbol_nat-7"/>
+    <cfg_step_label id="cfg_step_label-12" prod_lhs="symbol__cons_symbol_nat-6"
+                    prod_rhs="two_elements__teB-1 two_elements__teA-13"/>
+    <two_elements__teA id="two_elements__teA-14" value="symbol__cons_symbol_nat-14"/>
+    <cfg_step_label id="cfg_step_label-13" prod_lhs="symbol__cons_symbol_nat-17"
+                    prod_rhs="two_elements__teB-1 two_elements__teA-14"/>
+    <cfg_step_label id="cfg_step_label-14" prod_lhs="symbol__cons_symbol_nat-7"/>
+    <two_elements__teA id="two_elements__teA-15" value="symbol__cons_symbol_nat-2"/>
+    <two_elements__teA id="two_elements__teA-16" value="symbol__cons_symbol_nat-1"/>
+    <cfg_step_label id="cfg_step_label-15" prod_lhs="symbol__cons_symbol_nat-14"
+                    prod_rhs="two_elements__teA-15 two_elements__teA-16"/>
+    <cfg_step_label id="cfg_step_label-16" prod_lhs="symbol__cons_symbol_nat-2"/>
+    <two_elements__teA id="two_elements__teA-17" value="symbol__cons_symbol_nat-15"/>
+    <cfg_step_label id="cfg_step_label-17" prod_lhs="symbol__cons_symbol_nat-1"
+                    prod_rhs="two_elements__teB-1 two_elements__teA-17"/>
+    <cfg_step_label id="cfg_step_label-18" prod_lhs="symbol__cons_symbol_nat-15"/>
+    <cfg id="cfg"
+         cfg_nonterminals="symbol__cons_symbol_nat-1 symbol__cons_symbol_nat-2 symbol__cons_symbol_nat-3 symbol__cons_symbol_nat-4 symbol__cons_symbol_nat-5 symbol__cons_symbol_nat-6 symbol__cons_symbol_nat-7 symbol__cons_symbol_nat-8 symbol__cons_symbol_nat-9 symbol__cons_symbol_nat-10 symbol__cons_symbol_nat-11 symbol__cons_symbol_nat-12 symbol__cons_symbol_nat-13 symbol__cons_symbol_nat-14 symbol__cons_symbol_nat-15 symbol__cons_symbol_nat-16 symbol__cons_symbol_nat-17 symbol__cons_symbol_nat-18"
+         cfg_events="string_symbol-1" cfg_initial="symbol__cons_symbol_nat-5"
+         cfg_step_labels="cfg_step_label-1 cfg_step_label-2 cfg_step_label-3 cfg_step_label-4 cfg_step_label-5 cfg_step_label-6 cfg_step_label-7 cfg_step_label-8 cfg_step_label-9 cfg_step_label-10 cfg_step_label-11 cfg_step_label-12 cfg_step_label-13 cfg_step_label-14 cfg_step_label-15 cfg_step_label-16 cfg_step_label-17 cfg_step_label-18"/>
+</root>

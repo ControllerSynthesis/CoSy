@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<root
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../main/resources/cosy.xsd">
+
+    <!--
+    author: Sven Schneider
+    copyright: all rights reserved, 2018
+    -->
+
+    <string_symbol id="event_F" string="F"/>
+    <string_symbol id="event_S" string="S"/>
+    <string_symbol id="event_B1" string="B1"/>
+    <string_symbol id="event_B2" string="B2"/>
+    <string_symbol id="event_A" string="A"/>
+    <string_symbol id="box" string="☐"/>
+    <string_symbol id="bullet" string="•"/>
+    <string_symbol id="circ" string="○"/>
+
+    <string_symbol id="state_q1" string="q1"/>
+    <string_symbol id="state_q2" string="q2"/>
+    <string_symbol id="state_q3" string="q3"/>
+    <string_symbol id="state_q4" string="q4"/>
+    <epda_step_label id="edge_spec_0" edge_src="state_q1" edge_event="event_A" edge_pop="box" edge_push="bullet box"
+                     edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_1" edge_src="state_q1" edge_event="event_A" edge_pop="bullet"
+                     edge_push="bullet bullet" edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_2" edge_src="state_q1" edge_event="event_A" edge_pop="circ" edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_3" edge_src="state_q1" edge_event="event_B1" edge_pop="box" edge_push="circ box"
+                     edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_4" edge_src="state_q1" edge_event="event_B1" edge_pop="bullet bullet"
+                     edge_push="bullet" edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_5" edge_src="state_q1" edge_event="event_B1" edge_pop="circ" edge_push="circ circ"
+                     edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_6" edge_src="state_q1" edge_event="event_B2" edge_pop="box" edge_push="circ box"
+                     edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_7" edge_src="state_q1" edge_event="event_B2" edge_pop="bullet" edge_trg="state_q1"/>
+    <epda_step_label id="edge_spec_8" edge_src="state_q1" edge_event="event_B2" edge_pop="circ" edge_push="circ circ"
+                     edge_trg="state_q1"/>
+    <epda
+            id="input"
+            epda_states="state_q1 state_q2 state_q3 state_q4"
+            epda_events="event_F event_S event_B1 event_B2 event_A"
+            epda_gamma="box bullet circ"
+            epda_delta="
+            edge_spec_0
+            edge_spec_1
+            edge_spec_2
+            edge_spec_3
+            edge_spec_4
+            edge_spec_5
+            edge_spec_6
+            edge_spec_7
+            edge_spec_8
+            "
+            epda_initial="state_q1"
+            epda_eos="box"
+            epda_marking="state_q3"/>
+
+
+</root>
+
+

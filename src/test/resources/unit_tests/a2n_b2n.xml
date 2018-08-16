@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<root
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../main/resources/cosy.xsd">
+
+    <!--
+    author: Sven Schneider
+    copyright: all rights reserved, 2018
+    -->
+
+    <!-- EPDA -->
+    <string_symbol id="event_a" string="a"/>
+    <string_symbol id="event_b" string="b"/>
+    <string_symbol id="box" string="☐"/>
+    <string_symbol id="bullet" string="•"/>
+    <string_symbol id="state_0" string="q0"/>
+    <string_symbol id="state_1" string="q1"/>
+    <string_symbol id="state_2" string="q2"/>
+    <string_symbol id="state_3" string="q3"/>
+    <epda_step_label id="edge_0" edge_src="state_0" edge_event="event_a" edge_pop="box"
+                     edge_push="bullet box" edge_trg="state_1"/>
+    <epda_step_label id="edge_1" edge_src="state_1" edge_event="event_a" edge_pop="bullet"
+                     edge_push="bullet bullet" edge_trg="state_1"/>
+    <epda_step_label id="edge_2" edge_src="state_1" edge_event="event_b" edge_pop="bullet"
+                     edge_trg="state_2"/>
+    <epda_step_label id="edge_3" edge_src="state_2" edge_event="event_b" edge_pop="bullet"
+                     edge_trg="state_2"/>
+    <epda_step_label id="edge_4" edge_src="state_2" edge_pop="box" edge_push="box"
+                     edge_trg="state_3"/>
+    <epda
+            id="dpda__a2n_b2n"
+            epda_states="state_0 state_1 state_2 state_3"
+            epda_events="event_a event_b"
+            epda_gamma="box bullet"
+            epda_delta="edge_0 edge_1 edge_2 edge_3 edge_4"
+            epda_initial="state_0"
+            epda_eos="box"
+            epda_marking="state_0 state_3"/>
+
+    <!-- CFG -->
+    <string_symbol id="nonterminal_0" string="S"/>
+    <two_elements__teB id="beB_event_a" value="event_a"/>
+    <two_elements__teA id="beA_nonterminal_0" value="nonterminal_0"/>
+    <two_elements__teB id="beB_event_b" value="event_b"/>
+    <cfg_step_label id="prod_0" prod_lhs="nonterminal_0" prod_rhs="beB_event_a beA_nonterminal_0 beB_event_b"/>
+    <cfg_step_label id="prod_1" prod_lhs="nonterminal_0"/>
+    <cfg
+            id="cfg__a2n_b2n"
+            cfg_nonterminals="nonterminal_0"
+            cfg_events="event_a event_b"
+            cfg_initial="nonterminal_0"
+            cfg_step_labels="prod_0 prod_1"/>
+
+    <!-- PARSER -->
+    <string_symbol id="nonterminal_1" string="S1"/>
+    <string_symbol id="nonterminal_2" string="S2"/>
+    <string_symbol id="nonterminal_3" string="S3"/>
+    <string_symbol id="nonterminal_box" string="S☐"/>
+    <string_symbol id="nonterminal_bullet" string="S•"/>
+    <string_symbol id="event_END" string="$"/>
+    <parser_step_label id="rule_0" rule_lpop="nonterminal_0" rule_lpush="nonterminal_box nonterminal_0"/>
+    <parser_step_label id="rule_1" rule_lpop="nonterminal_0" rule_rpop="event_a"
+                       rule_lpush="nonterminal_bullet nonterminal_1"
+    />
+    <parser_step_label id="rule_2" rule_lpop="nonterminal_1" rule_rpop="event_a"
+                       rule_lpush="nonterminal_bullet nonterminal_1"
+    />
+    <parser_step_label id="rule_3" rule_lpop="nonterminal_bullet nonterminal_1" rule_rpop="event_b"
+                       rule_lpush="nonterminal_2"
+    />
+    <parser_step_label id="rule_4" rule_lpop="nonterminal_bullet nonterminal_2" rule_rpop="event_b"
+                       rule_lpush="nonterminal_2"
+    />
+    <parser_step_label id="rule_5" rule_lpop="nonterminal_box nonterminal_2" rule_lpush="nonterminal_3"
+    />
+    <parser
+            id="parser__a2n_b2n"
+            parser_nonterms="nonterminal_0 nonterminal_1 nonterminal_2 nonterminal_3 nonterminal_box nonterminal_bullet"
+            parser_events="event_a event_b event_END"
+            parser_initial="nonterminal_0"
+            parser_marking="nonterminal_0 nonterminal_3"
+            parser_step_labels="rule_0 rule_1 rule_2 rule_3 rule_4 rule_5"
+            parser_eoi="event_END"/>
+</root>

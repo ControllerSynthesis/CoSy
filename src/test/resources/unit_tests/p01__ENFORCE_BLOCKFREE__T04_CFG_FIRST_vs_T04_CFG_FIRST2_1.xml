@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<root
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../main/resources/cosy.xsd">
+
+    <!--
+    author: Sven Schneider
+    copyright: all rights reserved, 2018
+    -->
+
+    <string_symbol id="event_0" string="e0"/>
+    <string_symbol id="event_1" string="e1"/>
+    <string_symbol id="event_2" string="e2"/>
+    <string_symbol id="event_3" string="e3"/>
+    <string_symbol id="event_4" string="e4"/>
+    <string_symbol id="event_5" string="e5"/>
+    <string_symbol id="event_6" string="e6"/>
+    <string_symbol id="event_7" string="e7"/>
+    <string_symbol id="event_8" string="e8"/>
+
+    <two_elements__teB id="e0" value="event_0"/>
+    <two_elements__teB id="e1" value="event_1"/>
+    <two_elements__teB id="e2" value="event_2"/>
+    <two_elements__teB id="e3" value="event_3"/>
+    <two_elements__teB id="e4" value="event_4"/>
+    <two_elements__teB id="e5" value="event_5"/>
+    <two_elements__teB id="e6" value="event_6"/>
+    <two_elements__teB id="e7" value="event_7"/>
+    <two_elements__teB id="e8" value="event_8"/>
+
+    <string_symbol id="nonterminal_N0" string="N0"/>
+    <string_symbol id="nonterminal_N1" string="N1"/>
+    <string_symbol id="nonterminal_N2" string="N2"/>
+    <string_symbol id="nonterminal_N3" string="N3"/>
+    <string_symbol id="nonterminal_N4" string="N4"/>
+    <string_symbol id="nonterminal_N5" string="N5"/>
+    <string_symbol id="nonterminal_N6" string="N6"/>
+    <string_symbol id="nonterminal_N7" string="N7"/>
+    <string_symbol id="nonterminal_N8" string="N8"/>
+    <string_symbol id="nonterminal_N9" string="N9"/>
+    <string_symbol id="nonterminal_N10" string="N10"/>
+    <string_symbol id="nonterminal_N11" string="N11"/>
+    <string_symbol id="nonterminal_N12" string="N12"/>
+    <string_symbol id="nonterminal_N13" string="N13"/>
+    <string_symbol id="nonterminal_N14" string="N14"/>
+    <string_symbol id="nonterminal_N15" string="N15"/>
+    <string_symbol id="nonterminal_N16" string="N16"/>
+    <string_symbol id="nonterminal_N17" string="N17"/>
+    <string_symbol id="nonterminal_N18" string="N18"/>
+    <string_symbol id="nonterminal_N19" string="N19"/>
+    <string_symbol id="nonterminal_N20" string="N20"/>
+    <string_symbol id="nonterminal_N21" string="N21"/>
+
+    <two_elements__teA id="N0" value="nonterminal_N0"/>
+    <two_elements__teA id="N1" value="nonterminal_N1"/>
+    <two_elements__teA id="N2" value="nonterminal_N2"/>
+    <two_elements__teA id="N3" value="nonterminal_N3"/>
+    <two_elements__teA id="N4" value="nonterminal_N4"/>
+    <two_elements__teA id="N5" value="nonterminal_N5"/>
+    <two_elements__teA id="N6" value="nonterminal_N6"/>
+    <two_elements__teA id="N7" value="nonterminal_N7"/>
+    <two_elements__teA id="N8" value="nonterminal_N8"/>
+    <two_elements__teA id="N9" value="nonterminal_N9"/>
+    <two_elements__teA id="N10" value="nonterminal_N10"/>
+    <two_elements__teA id="N11" value="nonterminal_N11"/>
+    <two_elements__teA id="N12" value="nonterminal_N12"/>
+    <two_elements__teA id="N13" value="nonterminal_N13"/>
+    <two_elements__teA id="N14" value="nonterminal_N14"/>
+    <two_elements__teA id="N15" value="nonterminal_N15"/>
+    <two_elements__teA id="N16" value="nonterminal_N16"/>
+    <two_elements__teA id="N17" value="nonterminal_N17"/>
+    <two_elements__teA id="N18" value="nonterminal_N18"/>
+    <two_elements__teA id="N19" value="nonterminal_N19"/>
+    <two_elements__teA id="N20" value="nonterminal_N20"/>
+    <two_elements__teA id="N21" value="nonterminal_N21"/>
+
+
+    <cfg_step_label id="prod_00" prod_lhs="nonterminal_N0" prod_rhs="N3 N3"/>
+    <cfg_step_label id="prod_01" prod_lhs="nonterminal_N1" prod_rhs="N3 N7"/><!-- -->
+    <cfg_step_label id="prod_02" prod_lhs="nonterminal_N2" prod_rhs="e8 N3"/><!-- -->
+    <cfg_step_label id="prod_03" prod_lhs="nonterminal_N3"/><!-- -->
+    <cfg_step_label id="prod_04" prod_lhs="nonterminal_N4" prod_rhs="e2 N5"/>
+    <cfg_step_label id="prod_05" prod_lhs="nonterminal_N5" prod_rhs="N0 N10"/>
+    <cfg_step_label id="prod_06" prod_lhs="nonterminal_N6" prod_rhs="N0 N16"/>
+    <cfg_step_label id="prod_07" prod_lhs="nonterminal_N7" prod_rhs="e6 N3"/> <!-- -->
+    <cfg_step_label id="prod_08" prod_lhs="nonterminal_N8" prod_rhs="e0 N11 e0"/>
+    <cfg_step_label id="prod_09" prod_lhs="nonterminal_N9" prod_rhs="e7 N14"/> <!-- -->
+    <cfg_step_label id="prod_10" prod_lhs="nonterminal_N10" prod_rhs="e4 N20"/>
+    <cfg_step_label id="prod_11" prod_lhs="nonterminal_N11" prod_rhs="e1 N18"/>
+    <cfg_step_label id="prod_12" prod_lhs="nonterminal_N12" prod_rhs="N1 N17"/> <!-- -->
+    <cfg_step_label id="prod_13" prod_lhs="nonterminal_N13" prod_rhs="N0 N19"/>
+    <cfg_step_label id="prod_14" prod_lhs="nonterminal_N14" prod_rhs="N3 N2"/> <!-- -->
+    <cfg_step_label id="prod_15" prod_lhs="nonterminal_N15" prod_rhs="N0 N4"/>
+    <cfg_step_label id="prod_16" prod_lhs="nonterminal_N16" prod_rhs="e5 N3"/>
+    <cfg_step_label id="prod_17" prod_lhs="nonterminal_N17" prod_rhs="N3 N9"/> <!-- -->
+    <cfg_step_label id="prod_18" prod_lhs="nonterminal_N18" prod_rhs="N0 N21"/>
+    <cfg_step_label id="prod_19" prod_lhs="nonterminal_N19" prod_rhs="e3 N15"/>
+    <cfg_step_label id="prod_20" prod_lhs="nonterminal_N20" prod_rhs="N6 N12"/>
+    <cfg_step_label id="prod_21" prod_lhs="nonterminal_N21" prod_rhs="e2 N13"/>
+
+    <cfg
+            id="input"
+            cfg_nonterminals="nonterminal_N0 nonterminal_N1 nonterminal_N2 nonterminal_N3 nonterminal_N4 nonterminal_N5 nonterminal_N6 nonterminal_N7 nonterminal_N8 nonterminal_N9 nonterminal_N10 nonterminal_N11 nonterminal_N12 nonterminal_N13 nonterminal_N14 nonterminal_N15 nonterminal_N16 nonterminal_N17 nonterminal_N18 nonterminal_N19 nonterminal_N20 nonterminal_N21"
+            cfg_events="event_0 event_1 event_2 event_3 event_4 event_5 event_6 event_7 event_8"
+            cfg_initial="nonterminal_N12"
+            cfg_step_labels="prod_01 prod_02 prod_03 prod_07 prod_09 prod_12 prod_14 prod_17"/>
+
+    <!--cfg_step_labels="prod_00 prod_01 prod_02 prod_03 prod_04 prod_05 prod_06 prod_07 prod_08 prod_09 prod_10 prod_11 prod_12 prod_13 prod_14 prod_15 prod_16 prod_17 prod_18 prod_19 prod_20 prod_21"/>-->
+
+</root>
+
